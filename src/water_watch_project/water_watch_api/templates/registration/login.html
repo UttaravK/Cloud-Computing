@@ -1,0 +1,32 @@
+{% extends 'base_sign.html' %} {% load widget_tweaks %}
+<html>
+
+<head>
+  <title>
+    {% block mytitle %}Sign In{% endblock %}
+  </title>
+</head>
+
+<body>
+
+  {% load widget_tweaks %}
+  <p>
+    <h2>  {% block heading %}Sign In Here {% endblock %}</h2>
+  </p>
+  {% block myform %}
+
+  <form method="post">
+    {% csrf_token %}
+    <br>
+    <h3>{{ form.username.label_tag }} {% render_field form.username%}</h3>
+    <h3>{{ form.password.label_tag }} {% render_field form.password%}</h3>
+    <br>
+    <center>
+      <input type="submit" class="btn btn-success btn-lg" value="Sign In">
+    </center>
+  </form>
+  {% endblock %}
+
+</body>
+
+</html>
