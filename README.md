@@ -1,11 +1,18 @@
 # Environmental Sensor Station Simulation and Analysis 
 ## (Domain: Cloud Computing)
 
-#### Set up virtual machine
+#### Install and Set up Virtual Machine
 ```
  vagrant up  
  vagrant ssh  
  ```
+ 
+#### Install Dependencies
+
+```
+cd ./src/water_watch_project/
+pip install -r requirements.txt
+```
 
  #### Migrate Database
  ```
