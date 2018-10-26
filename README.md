@@ -3,6 +3,7 @@
 
 #### Install and Set up Virtual Machine
 ```
+cd ./
  vagrant up  
  vagrant ssh  
  ```
