@@ -4,8 +4,8 @@
 #### Install and Set up Virtual Machine
 ```
 cd ./
- vagrant up  
- vagrant ssh  
+vagrant up  
+vagrant ssh  
  ```
  
 #### Install Dependencies
